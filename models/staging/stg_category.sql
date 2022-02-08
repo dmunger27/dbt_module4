@@ -1,6 +1,6 @@
 with category as (
     select *
-    from `assignment4-340620.ticketdb.category`
+    from {{ source('ticketdb', 'category') }}
 )
 
 select * from category

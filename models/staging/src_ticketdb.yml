@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: ticketdb
+    database: assignment4-340620 
+    schema: ticketdb
+    tables:
+      - name: users
+      - name: venue
+      - name: category
+      - name: events
+      - name: listings
+      - name: sales
+      - name: date

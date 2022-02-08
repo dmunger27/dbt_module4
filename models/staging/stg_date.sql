@@ -8,7 +8,7 @@ with date as (
         qtr,
         year,
         case when holiday = TRUE then 1 else 0 end as holiday
-    from `assignment4-340620.ticketdb.date`
+    from {{ source('ticketdb', 'date') }}
 )
 
 select * from date
