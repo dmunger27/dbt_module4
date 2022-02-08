@@ -18,7 +18,7 @@ with users as (
         case when likevegas = 'TRUE' then 1 else 0 end as likevegas,
         case when likebroadway = 'TRUE' then 1 else 0 end as likebroadway,
         case when likemusicals = 'TRUE' then 1 else 0 end as likemusicals
-    from `assignment4-340620.ticketdb.users`
+    from {{ source('ticketdb', 'users') }}
 )
 
 select * from users

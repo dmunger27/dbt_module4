@@ -1,6 +1,6 @@
 with venue as (
     select *
-    from `assignment4-340620.ticketdb.venue`
+    from {{ source('ticketdb', 'venue') }}
 )
 
 select * from venue

@@ -1,7 +1,7 @@
 with listings as (
     select *,
         extract(date from listtime) as listdate
-    from `assignment4-340620.ticketdb.listings`
+    from {{ source('ticketdb', 'listings') }}
 )
 
 select * from listings

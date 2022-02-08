@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: attend_together
+    description: List of users that attended events together.
+  - name: commission
+    description: Commission structure for the TICKIT website.
+  - name: day_over_day
+    description: Day over day sales performance.
+  - name: expensive_tickets
+    description: List of tickets and the price paid for each ticket.
+  - name: highest_sales_city
+    description: List of the highest selling events by city.
+  - name: holiday_sales
+    description: List of total sales by holiday in 2008.
+  - name: musical_sports
+    description: List of users who like sports and purchased musical tickets.
+  - name: outlier_sales
+    description: List of lowest selling listings.
+  - name: outside_state
+    description: List of users who purchased tickets for events outside of their state.
+  - name: percent_sold
+    description: The percentage of tickets for each event that were sold.
+  - name: resellers
+    description: List of resellers.
+  - name: time_between_purchases
+    description: The amount of time between purchases by user.
+  - name: time_to_sell_out
+    description: How long it takes sold out listings to sell out.
+  - name: unique_buyers
+    description: Count of unique buyers by date.
+  - name: venue_city_sales
+    description: Total number of sales by event city.
