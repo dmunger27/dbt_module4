@@ -1,0 +1,99 @@
+version: 2
+
+models:
+  - name: stg_allusers
+    description: Staged user data from the TICKIT database.
+    columns: 
+      - name: userid
+        description: The primary key for users.
+        tests:
+          - unique
+          - not_null
+      - name: likesports
+        description: Flag if user likes sports (1 = True, 0 = False).
+        tests:
+          - not_null
+      - name: liketheatre
+        description: Flag if user likes theatre (1 = True, 0 = False).
+        tests:
+          - not_null
+      - name: likeconcerts
+        description: Flag if user likes concerts (1 = True, 0 = False).
+        tests:
+          - not_null
+      - name: likejazz
+        description: Flag if user likes jazz (1 = True, 0 = False).
+        tests:
+          - not_null
+      - name: likeclassical
+        description: Flag if user likes classical (1 = True, 0 = False).
+        tests:
+          - not_null
+      - name: likeopera
+        description: Flag if user likes opera (1 = True, 0 = False).
+        tests:
+          - not_null
+      - name: likerock
+        description: Flag if user likes rock (1 = True, 0 = False).
+        tests:
+          - not_null
+      - name: likevegas
+        description: Flag if user likes vegas (1 = True, 0 = False).
+        tests:
+          - not_null
+      - name: likebroadway
+        description: Flag if user likes broadway (1 = True, 0 = False).
+        tests:
+          - not_null
+      - name: likemusicals
+        description: Flag if user likes musicals (1 = True, 0 = False).
+        tests:
+          - not_null
+  - name: stg_category
+    description: Staged category data from the TICKIT database.
+    columns: 
+      - name: catid
+        description: Primary key for categories.
+        tests:
+          - unique
+          - not_null
+  - name: stg_date
+    description: Stage date data from the TICKIT database.
+    columns:
+      - name: dateid
+        description: Primary key for dates.
+        tests:
+          - unique
+          - not_null
+  - name: stg_events
+    description: Stage event data from the TICKIT database.
+    columns:
+      - name: eventid
+        description: Primary key for events.
+        tests:
+          - unique
+          - not_null
+  - name: stg_listings
+    description: Stage listing data from the TICKIT database.
+    columns:
+      - name: listid
+        description: Primary key for listings.
+        tests:
+          - unique
+          - not_null
+  - name: stg_sales
+    description: Stage sales data from the TICKIT database.
+    columns:
+      - name: salesid
+        description: Primary key for sales.
+        tests:
+          - unique
+          - not_null
+  - name: stg_venue
+    description: Stage venue data from the TICKIT database.
+    columns:
+      - name: venueid
+        description: Primary key for venue.
+        tests:
+          - unique
+          - not_null            
